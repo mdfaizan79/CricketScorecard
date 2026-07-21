@@ -1,0 +1,24 @@
+# Dependencies and generated builds
+node_modules/
+client/node_modules/
+server/node_modules/
+client/dist/
+server/dist/
+
+# Environment secrets (keep only the example template in Git)
+.env
+.env.*
+!.env.example
+client/.env
+client/.env.*
+!client/.env.example
+server/.env
+server/.env.*
+!server/.env.example
+
+# Logs, local editor files, and operating-system files
+*.log
+logs/
+.DS_Store
+.idea/
+.vscode/
