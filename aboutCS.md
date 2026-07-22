@@ -1,6 +1,6 @@
 # CricScore (CS) - Platform Documentation
 
-CricScore is a real-time, full-stack live cricket scoring and broadcasting platform. It allows administrators to set up matches and log balls, while providing public viewers with live updates, scorecards, commentary, and points tables.
+CricScore is in a real-time, full-stack live cricket scoring and broadcasting platform. It allows administrators to set up matches and log balls, while providing public viewers with live updates, scorecards, commentary, and points tables.
 
 ---
 
