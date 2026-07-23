@@ -9,7 +9,6 @@ const auth = async (req, res, next) => {
       return res.status(401).json({ error: 'No token provided, authorization denied' });
     }
 
-
     const token = authHeader.replace('Bearer ', '');
     const decoded = jwt.verify(token, JWT_SECRET);
     const user = await User.findById(decoded.userId).select('-password');
@@ -18,7 +17,6 @@ const auth = async (req, res, next) => {
       return res.status(401).json({ error: 'Token is not valid, user not found' });
     }
 
-    
     req.user = user;
     req.token = token;
     next();

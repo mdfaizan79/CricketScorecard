@@ -10,7 +10,6 @@ const JWT_SECRET = process.env.JWT_SECRET || 'cricscore-dev-secret';
 router.post('/register', async (req, res) => {
   try {
     const { username, email, password, role } = req.body;
-
     // Check if user already exists
     const existingUser = await User.findOne({ $or: [{ email }, { username }] });
     if (existingUser) {
@@ -42,7 +41,6 @@ router.post('/register', async (req, res) => {
     res.status(500).json({ error: 'Server error: ' + err.message });
   }
 });
-
 // POST /api/auth/login
 router.post('/login', async (req, res) => {
   try {
