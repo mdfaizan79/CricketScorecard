@@ -10,7 +10,6 @@ const {
   normalizeBall,
   serializeMatch,
 } = require('../utils/serializers');
-
 const router = express.Router();
 
 // Helper: get max overs for format
@@ -120,7 +119,6 @@ function findTeam(match, reference, fallbackIndex = null) {
 
   return null;
 }
-
 function chooseOpeningBowler(team) {
   if (!team?.players?.length) return null;
 

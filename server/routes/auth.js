@@ -79,7 +79,6 @@ router.post('/login', async (req, res) => {
     res.status(500).json({ error: 'Server error: ' + err.message });
   }
 });
-
 // GET /api/auth/me
 router.get('/me', auth, async (req, res) => {
   try {
